@@ -4,23 +4,37 @@
 <html>
 	<head>
 		<title>Restaurant</title>
+		<link href="Restaurantstyles.css" rel="stylesheet" type="text/css" />
+		<style>
+			header { font-family: "classico";
+			font-size: 130%;
+			font-style: italic
+			}
+
+		</style>
 	</head>
 	<body>
 		<p>Home page </p>
 		<hr/> <!--color adj and circles -->
-		<header> Restaurant </header>
+		<header class="Jumbotron">
+			<h1>Rahi's</h1>
+			<h2>BBQ & GRILL</h2>
+		</header>
 		<hr/>
 		<nav>
-			<a href="Menu.html">Menu</a>  <a href="contact.html">contact</a> 
+			<a href="Menu.html">Menu</a>  <a href="contact.html">Contact Us</a>
 		</nav>
 		<hr/>
-		<section>
-				<img src="images/amir.jpg" alt="alt goes here" /><!--pic alt -->
+		<section id="main">
+				<img src="images/steak.jpeg" alt="alt goes here" /><!--pic alt -->
+				<img src="images/wine.jpeg" align="right" alt="alt goes here"/><!--pic alt -->
 				<p>paragraph </p>
 		</section>
 		<hr/>
-		<p>street, city, State, Zip</p><!-- address placement -->
-		<p>telephone</p>
+		<footer>
+			<p>street, city, State, Zip</p><!-- address placement -->
+			<p>telephone</p>
+		</footer>
 	</body>
 	
 </html>

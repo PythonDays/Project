@@ -4,41 +4,46 @@
 <html>
 	<head>
 		<title>Amir Rahimi's Portfolio</title>
-		<link href="styles.css" rel="stylesheet" type="text/css" />
-		<style>
-			header {
-        background-color: darkgray;
-		</style>
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
-		<header>
-			<h1> Portfolio for Amir Rahimi</h1>
-		</header>
+			<header class="jumbotron">
+				<h1> Portfolio for Amir Rahimi</h1>
+    			<h2 class="font-italic">Web Developer Extraordinaire</h2>
+    			<h3 class="text-right mt-5">Solving Web Dev problems every day!</h3>
+			</header>
 	<hr style="border: thin dotted red" />
 		<!-- We need to add links to projects.html, contact.html, and testimonials.html -->	
 		<nav class="border">
-			<p><a href="Projects.html">Projects</a>   <a href="Testimonials.html">Testimonials</a>   <a href="Contact.html">Contact</a> </p>
-			<hr style="width: 50%; border: 2px solid blueviolet;" />
+			<p><a href="Projects.html">Projects</a>   <a href="Testimonials.html">Testimonials</a>   <a href="Contact.html">Contact</a> </p
+			<hr style="width: 50%; border: 2px solid white;" />
 		</nav>
 
 		<section>
-			<article class="border" id="about-me"><h2> <em> About me</em> </h2>
-				<img src="images/amir.jpg" alt="Portrait of Amirrahi" />
-				<p>paragraph </p></article>
+			<article class="border" id="about-me">
+				<h2> <em> About me</em> </h2>
+				<img src="images/amir.jpg" alt="Portrait of Amirrahi"  width="250" style="float:left;"/>
+				<div class="right-content">
+				<p>paragraph </p>
+			</article>
 		</section>
+		<div style="clear:both"></div>
 		<section>
 			<article class="border" id= "Past-Experiences"><h2> <em>Past Experiences</em></h2>
-			<img src="images/past.jpg" alt="Portrait of Amirrahi" />
+			<img src="images/past.jpg" alt="Portrait of Amirrahi" width="250" style="float:left;"/>
+				<div class="right-content">
 				<p> Paragraph </p>
 			</article>
 		</section>
+		<div style="clear:both"></div>
 		<section >
 			<article class="border" id= "Hobbies"><h2> <em>Hobbies</em> </h2>
-			<img src="images/hobbies.jpg" alt="Portrait of Amirrahi" />
+			<img src="images/hobbies.jpg" alt="Portrait of Amirrahi" width="250" style="float:left;"/>
 				<p>paragraph </p></article>
 		</section>
+		<div style="clear:both"></div>
 	<hr/>
-		<footer style="background-color: fuchsia">
+		<footer style="background-color: ">
 			<p>&copy; 2021 Amir Rahimi. All rights reserved.</p>
 		</footer>
 
