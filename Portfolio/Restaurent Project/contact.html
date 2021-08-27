@@ -1,23 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Amir Rahimi 08-11-21 -->
+<!--Amir Rahimi 08-27-21 -->
 <html>
 	<head>
-		<title>Restaurant</title>
+		<title>Rahi's Restaurant</title>
+		<link href="Restaurantstyles.css" rel="stylesheet" type="text/css" />
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+		<style>
+			p  {
+				text-align: center;
+				}
+			header {
+				font-family: "classico";
+				font-size: 130%;
+				font-style: italic
+				}
+		</style>
+		<script>
+			function check(){
+				if (document.getElementById("name").value.length > 0) {
+					if (document.getElementById("email").value.length > 0){
+						if (document.getElementById("phone").value.length > 0){
+							window.alert("Thanks we will contact you soon");
+							}}}
+				else{
+					window.alert("please provide at least Name, Email, and phone number!");
+				}
+			}
+		</script>
 	</head>
 	<body>
-		<p>Contact Us </p>
-		<hr/> <!--color adj and circles -->
-		<header> Restaurent </header>
+		<hr/>
+		<header>
+			<h1>Rahi's</h1>
+			<h2>BBQ & GRILL</h2>
+		</header>
 		<hr/>
 		<nav>
-			<a href="home.html">Home</a>  <a href="menu.html">Menu</a> 
+			<div><a href="home.html"><i class='fas fa-house-user' style='font-size:36px'></i></a> </div>
+			<a href="menu.html">Menu</a>
 		</nav>
 		<hr/>
-		<form>
-			Name:<input type="text" name= "text1"/><br/><br/>
-			Email:<input type="text" name= "text2"/><br/><br/>
-			Phone:<input type="text" name= "text3"/><br/><br/>
+		<form name="RegForm" onsubmit="return check()">
+			Name:<input type="text" id="name" name= "text1"/><br/><br/>
+			Email:<input type="text" id="email" name= "text2"/><br/><br/>
+			Phone:<input type="text" id="phone" name= "text3"/><br/><br/>
 			Reason for inquiry : <select name="reason">
 									<option value= "Catering">Catering</option>
 									<option value= "Private Party">Private Party</option>
@@ -25,15 +52,20 @@
 									<option value= "Other">Other</option>
 								 </select><br/><br/>
 			Additional information:<textarea name="info"></textarea><br/><br/>
-			Have you been to the restaurent? <input type="radio" name="answer" value="YES" checked />Yes   <input type="radio" name="answer" value="YES" checked />No<br />
+			Have you been to the restaurant? <input type="radio" name="answer" value="YES" checked />Yes   <input type="radio" name="answer" value="YES" checked />No<br />
 			Best days to contact you: <input type = "checkbox" name = "M" Value = "M" unchecked />M 
 									  <input type = "checkbox" name = "T" Value = "T" unchecked />T
 									  <input type = "checkbox" name = "W" Value = "W" unchecked />W
 									  <input type = "checkbox" name = "Th" Value = "Th" unchecked />Th 
 									  <input type = "checkbox" name = "F" Value = "F" unchecked />F <br/><br/>
-			<input type = "Submit" name = "send" Value= "Send Request"/>
-									  
+			<input type = "Submit" Value= "Send Request"/>
+
 		</form>
+	</body>
 		<hr/>
-		<p>street, city, State, Zip</p><!-- address placement -->
-		<p>telephone</p>
+		<footer>
+			<p>456 Jumanji Street, Burnaby, BC, V5J 1J9</p>
+			<p>604-555-8885</p>
+			<p> Please note: this website is best viewed with Javascript on</p>
+		</footer>
+		<noscript>please enable your javascript</noscript>

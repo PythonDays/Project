@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Amir Rahimi 08-11-21 -->
+<!--Amir Rahimi 08-11-27 -->
 <html>
 	<head>
-		<title>Restaurant</title>
+		<title>Rahi's Restaurant</title>
 		<link href="Restaurantstyles.css" rel="stylesheet" type="text/css" />
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 		<style>
+			header {
+				font-family: "classico";
+				font-size: 130%;
+				font-style: italic
+				}
 			caption {
    				font-weight: bold;
    				font-size: 1.2em;
@@ -13,9 +19,14 @@
 				}
 
 			table, th, td {
-    			border: 1px solid #0d1f2d;
+    			border: 3px solid #0d1f2d;
     			border-collapse: collapse;
     			padding: 5px 10px;
+    			background-color:#000000
+    			color: #b42424
+				}
+			td {
+				text-align: center;
 				}
 			table {
     			width: 90%;
@@ -24,38 +35,97 @@
 			tr {
     			height: 30px;
 				}
-			tr:nth-child(odd) {
-    			background-color: #e4c3ad;
+
+			p, h3 {
+				text-align: center;
 				}
-			}
+			div {
+				width: 50%;
+				margin:auto
+				}
+
 		</style>
 	</head>
 	<body>
-		<p>Menu </p>
 		<hr/> <!--color adj and circles -->
-		<header> Restaurant </header>
+		<header> <h1>Rahi's</h1>
+			<h2>BBQ & GRILL</h2>
+		</header>
 		<hr/>
 		<nav>
-			<a href="home.html">Home</a>  <a href="contact.html">contact us</a> 
+			<a href="home.html"> <i class='fas fa-house-user' style='font-size:36px'></i></a>  <a href="contact.html">Contact us</a>
 		</nav>
 		<hr/>
 		<section>
 			<table>
 				<tbody>
 					<tr>
-						<td><h3><em>Chicken Souvlakia</em></h3><br/>Boneless breast chicken on a skewer</e></td>
-						<td><h3><em>Calamari</em></h3><br/>Deep-fried baby squid with tzatziki. Served with pita bread</td>
-						<td><h3><em>Chicken and Prawns Combo Souvlakia</em></h3><br/>1 skewer of chicken and 1 skewer of prawn.
+						<td><h3><em>Chicken Souvlakia <br/>$15.65</em></h3><br/>Boneless breast chicken on a skewer</td>
+						<td><h3><em>Calamari <br/>$16.80</em></h3><br/>Deep-fried baby squid with tzatziki. Served with pita bread</td>
+						<td><h3><em>Chicken and Prawns Combo Souvlakia <br/>$16.55</em></h3><br/>1 skewer of chicken and 1 skewer of prawn.
 							served with rice, roast potato, vegetables, greek salad</td>
-					</tr><!--make the dish and bolden title of dish -->
-					<tr><td>dish1</td><td>dish1</td><td>dish1</td></tr>
+					</tr>
+					<tr>
+						<td><h3><em>Wild Salmon <br/>$19.25</em></h3><br/>Served with rice,potato,Greek salad, & tzatziki</td>
+						<td><h3><em>Falafel Platter <br/>$15.65</em></h3><br/>Served with rice, potato, Greek salad, & tzatziki</td>
+						<td><h3><em>Lamb Chops <br/>$15.65</em></h3><br/>Served with rice, potato, Greek salad, & tzatziki</td>
+					</tr>
 				</tbody>
 			</table>
+			<div>
+			<table >
+				<br/>
+				<br/>
+			<div>
+				<table>
+					<tbody>
+						<tr>
+							<td colspan="2">
+								<p><h2><strong>Beverages</strong></h2></p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<em><p>Root Beer</p></em>
+							</td>
+							<td>
+								<em><p>$3.00</p></em>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<em><p>Bottled Water</p></em>
+							</td>
+							<td>
+								<em><p>$1.25</p></em>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<em><p>Lemonade</p></em>
+							</td>
+							<td>
+								<em><p>$1.00</p></em>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<em><p>Iced Tea</p></em>
+							</td>
+							<td>
+								<em><p>$1.25</p></em>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</section>
 		<hr/>
 		<footer>
-			<p>street, city, State, Zip</p><!-- address placement -->
-			<p>telephone</p>
+			<p>456 Jumanji Street, Burnaby, BC, V5J 1J9</p>
+			<p>604-555-8885</p>
 
 		</footer>
 	</body>
+
+<noscript>please enable your javascript</noscript>

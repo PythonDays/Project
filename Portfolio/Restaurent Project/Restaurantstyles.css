@@ -4,13 +4,6 @@ Date created: 2021-08-17
 Date last modified: "
 */
 
-body {
-    background-color: #dbd899;
-    font-family: arial, helvetica, sans-serif;
-    color: #0d1f2d
-    max-width: 900px;
-    margin: 60px;
-}
 
 header, footer {
     background-color: #000000;
@@ -28,6 +21,7 @@ nav {
     border-bottom: 3px dashed #546a7b;
     margin-top: 4px;
     text-align: center;
+    border-radius: 16px;
     }
 nav a {
     background-color: #b41f24;
@@ -38,6 +32,7 @@ nav a {
     text-align: center;
     display: block;
     margin: 20px 40%;
+    border-radius: 16px;
     }
 form{
     text-align: center;
@@ -47,12 +42,58 @@ article {
     margin-bottom: 16px;
 }
 nav a:hover {
-    background-color: #fef9ff;
+    background-color: #323033;
     color: #5b7d87;
+    font-weight: bold;
+    border-radius: 16px;
+
 }
 nav a:active {
     font-weight: bold;
+    border-radius: 16px;
 }
 nav a:visited {
-    color: #e4c3ad;
+    color: #a465c0;
+    border-radius: 16px;
 }
+.carousel {
+position: relative;
+width: 100%;
+height: 100%;
+overflow: hidden;
+background-color: #333;
+}
+.carousel .item {
+position: absolute;
+width: 100%;
+height: 100%;
+text-align: center;
+}
+.carousel .controls {
+position: absolute;
+bottom: 0;
+width: 100%;
+text-align: center;
+z-index: 5;
+}
+
+.carousel .controls .btn {
+display: inline-block;
+-webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+border-radius: 100%;
+width: 12px;
+height: 12px;
+vertical-align: middle;
+margin: 0px 1px 15px;
+opacity: 0.7;
+}
+.carousel .controls .btn:hover {
+opacity: 0.9;
+}
+body {
+    font-family: arial, helvetica, sans-serif;
+    color: #0d1f2d
+    max-width: 900px;
+    margin: 60px;
+    background-color: #C5C289;}
